@@ -14,12 +14,13 @@ class Screen1 extends StatelessWidget {
           color: Colors.red,
           child: Text('Go Forwards To Screen 2'),
           onPressed: () {
-            Navigator.push(
+            /* Navigator.push(
               context,
               MaterialPageRoute(builder: (context) {
                 return Screen2();
               }),
-            );
+            );*/
+            Navigator.pushNamed(context, '/second');
           },
         ),
       ),
